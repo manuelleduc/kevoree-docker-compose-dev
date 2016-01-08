@@ -10,6 +10,10 @@ editor:
     - "10043:9090"
   environment:
     KEVOREE_REGISTRY_URL: http://127.0.0.1:10042/
+runjs:
+  image: manuelleduc/kevoree-docker-browser-runtime
+  ports:
+    - "10044:80"
 mqtt:
   image: ansi/mosquitto
   ports:
